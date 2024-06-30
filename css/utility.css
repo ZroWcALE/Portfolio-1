@@ -1,0 +1,151 @@
+:root {
+  --nanum: 'Nanum Myeongjo', serif;
+  --cursive: 'Satisfy', cursive;
+  --blue: #03e5ef;
+  --black: #111;
+  --offBlack: #252525;
+  --transition: all 0.4s ease;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--nanum);
+}
+
+body {
+  color: #fff;
+  line-height: 1.5;
+  background: var(--black);
+}
+
+.btn {
+  border: none;
+  margin: 1rem 0;
+  border-radius: 35px;
+  background: var(--blue);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.text {
+  font-size: 1.05rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: var(--cursive);
+}
+.btn:hover {
+  opacity: 0.5;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0.6rem 0;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 88vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 85vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-collapse {
+    height: 100%;
+    flex: 1 0 auto;
+  }
+  .brand-and-toggler {
+    flex: 0 0 100px;
+  }
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media screen and (min-width: 500px) {
+  .home .row-left h1 {
+    font-size: 4rem;
+  }
+  .home .row-left h2 {
+    font-size: 1.4rem;
+  }
+  .home-pg-btn button {
+    padding: 1rem 1.5rem;
+  }
+  .home .img-container {
+    width: 320px;
+    height: 320px;
+  }
+  .home .img-border {
+    width: 325px;
+    height: 325px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
